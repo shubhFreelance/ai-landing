@@ -44,10 +44,16 @@ export default function ContentSection() {
         </div>
       </div>
 
-      <div className={styles.divider}></div>
+      <div className={styles.divider}>
+        Hi
+      </div>
+
       
       <div className={styles.footer}>
         <p>Made in France</p>
+      </div>
+      <div className={styles.footer}>
+        
       </div>
     </section>
   );
