@@ -1,0 +1,77 @@
+/* app/components/ContentSection/ContentSection.module.css */
+.section {
+    background-color: #000000;
+    height: 120vh;
+    color: #cc2929;
+    padding: 4rem 2rem;
+    border-radius: 3rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 10vh; /* Initial overlap */
+    will-change: transform, opacity; /* Optimize for animation */
+  }
+  
+  .container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+  }
+  
+  .heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+   width: 600px;
+    font-family: "Mona Sans", sans-serif;
+
+
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    font-family: "Mona Sans", sans-serif;
+  }
+  
+  .text {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .link {
+    color: inherit;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid currentColor;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #000000;
+    margin: 4rem 0;
+    width: 100%;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  
+  .footer p {
+    margin: 0;
+  }

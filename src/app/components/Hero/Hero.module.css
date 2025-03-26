@@ -1,0 +1,85 @@
+/* app/components/Hero/Hero.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+    color: #000000;
+    background-color: #cc2929;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .description {
+    max-width: 800px;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 0;
+    color: inherit;
+    font-weight: 500;
+    font-family: "Mona Sans", sans-serif;
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500; /* Adjust based on Figma */
+  }
+  
+  .branding {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    flex-direction: column;
+  }
+  
+  .logo{
+    width: 100px;
+    height: auto ;
+  }
+  .title {
+    font-size: 28rem;
+    font-weight: 800; /* Adjust based on Figma */
+    letter-spacing: 2.3rem;
+    line-height: 400px;
+    margin: 0 auto;
+    width: 200px;
+    line-height: 1;
+    color: inherit;
+    font-family: "Antonio", sans-serif;
+   text-align: center;
+   padding: 1rem 0.1rem;
+  
+  }
+  
+  .meta {
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: "Mona Sans", sans-serif;
+    /* padding: .5rem; */
+    
+  }
+  
+  .meta p {
+    margin: 0;
+  }

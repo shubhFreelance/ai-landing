@@ -1,0 +1,14 @@
+/* app/globals.css */
+:root {
+  --text-color: #000000;
+  --background-color: #cc2929;
+  --font-primary: 'Inter', sans-serif; /* Adjust to match Figma */
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
