@@ -1,13 +1,22 @@
 /* app/components/Hero/Hero.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
-.hero {
+/* .hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
     padding: 2rem;
-    color: #000000;
-    background-color: #cc2929;
+    color: #7dce94;
+    background-color: #f9f8fd;
+  } */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+    /* Remove color and background-color from here */
+    transition: color 0.5s ease, background-color 0.5s ease;
   }
   
   .content {
@@ -52,8 +61,8 @@
     height: auto ;
   }
   .title {
-    font-size: 28rem;
-    font-weight: 800; /* Adjust based on Figma */
+    font-size: 16rem;
+    font-weight: 900; /* Adjust based on Figma */
     letter-spacing: 2.3rem;
     line-height: 400px;
     margin: 0 auto;

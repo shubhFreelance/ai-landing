@@ -1,8 +1,8 @@
 // app/components/ContentSection/ContentSection.js
-'use client'; // Required for hooks and browser APIs
+"use client"; // Required for hooks and browser APIs
 
-import { useEffect, useRef } from 'react';
-import styles from './ContentSection.module.css';
+import { useEffect, useRef } from "react";
+import styles from "./ContentSection.module.css";
 
 export default function ContentSection() {
   const sectionRef = useRef(null);
@@ -12,49 +12,63 @@ export default function ContentSection() {
 
     const handleScroll = () => {
       if (!section) return;
-      
+
       const rect = section.getBoundingClientRect();
-      const scrollPercentage = Math.min(1, Math.max(0, (window.innerHeight - rect.top) / window.innerHeight));
-      
+      const scrollPercentage = Math.min(
+        1,
+        Math.max(0, (window.innerHeight - rect.top) / window.innerHeight)
+      );
+
       // Apply transform based on scroll position
       section.style.transform = `translateY(${scrollPercentage * -50}%)`;
       section.style.opacity = scrollPercentage;
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
-    <section ref={sectionRef} className={styles.section} style={{
-      transform: 'translateY(0%)',
-      opacity: 0,
-      transition: 'transform 0.5s ease-out, opacity 0.5s ease-out'
-    }}>
+    <section
+      ref={sectionRef}
+      className={styles.section}
+      style={{
+        transform: "translateY(0%)",
+        opacity: 0,
+        transition: "transform 0.5s ease-out, opacity 0.5s ease-out",
+      }}
+    >
       <div className={styles.container}>
-        <h2 className={styles.heading}>REDEFINING THE STANDARDS OF CREATIVITY.</h2>
-        
+        <h2 className={styles.heading}>
+          REDEFINING THE STANDARDS OF CREATIVITY.
+        </h2>
+
         <div className={styles.content}>
           <p className={styles.text}>
-            At REFORM, we believe in reshaping perspectives. Our team combines expertise in strategy, design, and technology to deliver transformative experiences that challenge the ordinary.
+            At REFORM, we believe in reshaping perspectives. Our team combines
+            expertise in strategy, design, and technology to deliver
+            transformative experiences that challenge the ordinary.
           </p>
-          
-          <a href="#" className={styles.link}>ABOUT US</a>
+
+          <a href="#" className={styles.link}>
+            ABOUT US
+          </a>
         </div>
       </div>
-
       <div className={styles.divider}>
-        Hi
-      </div>
-
+        <video width="1400" autoPlay loop muted playsInline>
+          <source src="/123.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       
+
       <div className={styles.footer}>
         <p>Made in France</p>
       </div>
-      <div className={styles.footer}>
-        
+      <div className={styles.footer}></div>
       </div>
+      
     </section>
+    
   );
 }
